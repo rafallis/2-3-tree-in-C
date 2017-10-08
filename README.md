@@ -1,25 +1,26 @@
 # 2-3-tree-in-C
 2-3 tree implementation
 
-#project skeleton
-Project/
-|
-|-- presentation/
-|   |-- presentation.tex
-|    
-|-- src/
-|   |-- main.c
-|   |-- 2-3-tree-lib/
-|   |   |-- 2-3-tree.h
-|   |   |-- 2-3-tree.c
-|   |-- common/
-|   |   |-- common.h
-|   |   |-- ncurses-functions.h
-|   |   |-- ncurses-functions.c
-|
-|-- tests/
-|   |-- application1.c
-|
-|-- launcher.sh
-|-- LICENSE
-|-- README.md
+
+# project skeleton
+Project/ <br />
+|<br />
+|-- presentation/<br />
+|   |-- presentation.tex<br />
+|<br />
+|-- src/<br />
+|   |-- main.c<br />
+|   |-- 2-3-tree-lib/<br />
+|   |   |-- 2-3-tree.h<br />
+|   |   |-- 2-3-tree.c<br />
+|   |-- common/<br />
+|   |   |-- common.h<br />
+|   |   |-- ncurses-functions.h<br />
+|   |   |-- ncurses-functions.c<br />
+|<br />
+|-- tests/<br />
+|   |-- application1.c<br />
+|<br />
+|-- launcher.sh<br />
+|-- LICENSE<br />
+|-- README.md<br />
