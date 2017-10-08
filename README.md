@@ -37,3 +37,5 @@ Project Skeleton
 > |-- LICENSE <br />
 > |-- README.md <br />
 > 
+
+(Edited on [<i class="icon-wikipedia"></i> StackEdit](https://stackedit.io))
