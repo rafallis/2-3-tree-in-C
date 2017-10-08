@@ -14,6 +14,8 @@ Project/
 |   |   |-- 2-3-tree.c
 |   |-- common/
 |   |   |-- common.h
+|   |   |-- ncurses-functions.h
+|   |   |-- ncurses-functions.c
 |
 |-- tests/
 |   |-- application1.c
