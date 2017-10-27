@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  27 OCT 2017 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  27 OCT 2017 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,8 +107,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 )
 
-Class beamer Warning: ``red'' is obsolete. Use color theme structure instead on
- input line 348.
+Class beamer Warning: ``blue'' is obsolete. Use color theme structure instead o
+n input line 348.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -1184,8 +1184,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
  20850 strings out of 494929
- 378558 string characters out of 6180141
- 520380 words of memory out of 5000000
+ 378565 string characters out of 6180141
+ 520382 words of memory out of 5000000
  23569 multiletter control sequences out of 15000+600000
  11736 words of font info for 45 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -1201,7 +1201,7 @@ type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt8.pfb>
-Output written on presentation.pdf (27 pages, 963007 bytes).
+Output written on presentation.pdf (27 pages, 962948 bytes).
 PDF statistics:
  456 PDF objects out of 1000 (max. 8388607)
  387 compressed objects within 4 object streams
