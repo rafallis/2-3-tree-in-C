@@ -1,0 +1,17 @@
+\frametitle{Segundo Tópico}
+  \vspace{-0.3cm}
+  \begin{block}{Programa 01}
+     	\begin{lstlisting}
+int main (void)
+{
+  	char *ponteiro;
+
+  	ponteiro = malloc(1);
+  	if (ponteiro != NULL) {
+    		printf("Informe um caracter: ");
+    		scanf("%c", ponteiro);
+  	}
+  	return(EXIT_SUCCESS);
+}
+    	\end{lstlisting}
+  \end{block}
