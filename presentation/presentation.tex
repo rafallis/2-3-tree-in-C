@@ -91,36 +91,38 @@
 % Primeiro Tópico
 %---------------------------------------------------------------------------------------------------
 %
-\section[\thesection]{Primeiro Tópico}
+\section[\thesection]{Introdução}
 
-\frame { \frametitle{Primeiro Tópico}
-	Usando este modelo \texttt{LaTeX} para elaboração do \emph{slides} para apresentação oral (seminário) de seu tema, 
-a equipe deve ter em mente as seguintes diretrizes...
+\frame { \frametitle{Introdução}
+    Uma Árvore 2-3 é uma árvore onde cada nó com filho (nó interno) tem também 2 filhos (2-node) e 1 elemento de dados (chave) ou 3 filhos (3-nodes) e 2 elementos de dados (chaves).
+Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois elementos de dados (chaves).
 }
 
-\frame { \frametitle{Primeiro Tópico}
-	Cada \texttt{seção} (ou \emph{section}, em LaTeX) deve corresponder a um dos tópicos a serem abordados naquele tema.
-	\newline
-	\newline
-	As \texttt{seções} podem, livremente, serem subdividas em subseções e subsubseções.
-}
+%\frame { \frametitle{Introdução}
+%	Cada \texttt{seção} (ou \emph{section}, em LaTeX) deve corresponder a um dos tópicos a serem abordados naquele tema.
+%	\newline
+%	\newline
+%	As \texttt{seções} podem, livremente, serem subdividas em subseções e subsubseções.
+%}
 
-\frame { \frametitle{Primeiro Tópico}
-	\begin{block}{Bloco}
-		O uso do \texttt{bloco}, como está ocorrendo neste momento, é útil para destacar informações importante como, 
-por exemplo, enunciar:
-		\newline
+\frame { \frametitle{Introdução}
+	\begin{block}{Propriedades}
+		As principais \texttt{propriedades} de uma Árvore 2-3 são:
+		%\newline
 		\newline
 		\begin{itemize}
-		      \item definições; 
-		      \item teoremas;
-		      \item $\dots$
+		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves; 
+		      \item Cada nó não-folha tem 2 ou 3 filhos. Se tem 2 filhos tem 1 item de dados e se tem 3 filhos tem 2 itens de dados;
+		      \item Todos os dados são ordenados;
+		      \item Todas as folhas estão no mesmo nível;
+		      \item Cada nó folha tem 1 ou 2 campos.
+		      %\item $\dots$
 		\end{itemize}
         Como, por exemplo:
 	\end{block}
 }
 
-\frame { \frametitle{Primeiro Tópico}
+\frame { \frametitle{Introdução}
 	\begin{block}{\textit{Teorema de Kleene}}
 		Para uma dada linguagem $\mathcal{L}$, são equivalentes as afirmações:
 		\begin{enumerate}
@@ -131,7 +133,7 @@ por exemplo, enunciar:
 	\end{block}
 }
 
-\frame { \frametitle{Primeiro Tópico}
+\frame { \frametitle{Introdução}
 	\begin{block}{Bloco}
 		Um \texttt{bloco} pode conter figuras, tabelas, listas, etc.
 	\end{block}
@@ -141,7 +143,7 @@ por exemplo, enunciar:
 % Segundo Tópico
 %---------------------------------------------------------------------------------------------------
 %
-\section[\thesection]{Segundo Tópico}
+\section[\thesection]{}
 
 \frame { \frametitle{Segundo Tópico}
 	Aqui começamos um segundo tópico, ou seja, a segunda seção dos \emph{slides}
@@ -282,19 +284,18 @@ suas respectivas respostas esperadas.
 %
 \section[\thesection]{Referências Bibliográficas}
 
-\frame { \frametitle{Referências Bibliográficas}
-	A última seção dos \emph{slides} deve apresentar as referências bibliográficas do trabalho: artigos, 
-\emph{websites}, livros, capítulos de livros, etc.
-	\newline
-	\newline
-	Veja o exemplo...
-}
+%\frame { \frametitle{Referências Bibliográficas}
+%	A última seção dos \emph{slides} deve apresentar as referências bibliográficas do trabalho: artigos, 
+%\emph{websites}, livros, capítulos de livros, etc.
+%	\newline
+%	\newline
+%	Veja o exemplo...
+%}
 
 
 \frame { \frametitle{Referências Bibliográficas}
 	\begin{itemize}
-	 \item AHO, Alfred V. \textit{et al.} -- 2006 : \textit{Chapter 2 -- A Symple Syntax-Directed 
-Translator};
+	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
 	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
 	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
 Lexical Analysis}.

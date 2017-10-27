@@ -1,7 +1,6 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {brazil}
-\beamer@sectionintoc {1}{Primeiro T\IeC {\'o}pico}{2}{0}{1}
-\beamer@sectionintoc {2}{Segundo T\IeC {\'o}pico}{8}{0}{2}
-\beamer@sectionintoc {3}{Terceiro T\IeC {\'o}pico}{17}{0}{3}
-\beamer@sectionintoc {4}{Question\IeC {\'a}rio}{20}{0}{4}
-\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{24}{0}{5}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
+\beamer@sectionintoc {3}{Terceiro T\IeC {\'o}pico}{15}{0}{2}
+\beamer@sectionintoc {4}{Question\IeC {\'a}rio}{18}{0}{3}
+\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{22}{0}{4}
