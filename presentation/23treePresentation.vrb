@@ -1,0 +1,22 @@
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{Alocação de uma Árvore 2-3}
+		\begin{lstlisting}
+		23tree *23tree_alloc() {
+			23tree *t;
+			23tree_node *r;
+
+			t = malloc(sizeof(23tree));
+			t->n = 0;
+			t->min_item = NULL;
+			t->stack = malloc(STACK_SIZE * sizeof(23tree_node *));
+			r = t->root = malloc(sizeof(23tree_node));
+			r->key1 = r->key2 = NULL;
+			r->link_kind = LEAF;
+			r->left.item = r->middle.item = r->right.item;
+
+			return t;
+		}
+		\end{lstlisting}
+
+  	\end{block}

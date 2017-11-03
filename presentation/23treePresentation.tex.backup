@@ -1,0 +1,340 @@
+
+%
+%===================================================================================================
+% Universidade: Universidade Federal de Goiás - UFG
+% Curso.......: Ciência da Computação - BCC
+% Disciplina..: Estruturas de Dados - 1
+% Ano/Semestre: 2017/2
+%
+% Professor...: Wanderley de Souza Alencar
+%
+% Alunos: Luigi Wagner, Rafael Alessandro e Rafael Falcão.
+%
+% Material....: Modelo de Slides para Apresentação de Seminário
+%
+%===================================================================================================
+%
+\documentclass[cyan,compress]{beamer}
+\definecolor{mycolor}{rgb}{.0,.545,.545}
+\usecolortheme[named=mycolor]{structure}
+%\usepackage[dvips]{graphicx}            % to include images
+\usepackage[english,portuguese,brazil]{babel}
+%\usepackage[T1]{fontenc} 
+%\usepackage[ansinew]{inputenc} 
+\usepackage[utf8x]{inputenc}  
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{fancyvrb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+% \usepackage[vlined,titlenumbered,algo2e,ruled]{algorithm2e} 
+\usepackage[english, ruled, vlined, longend]{algorithm2e}
+\usepackage{indentfirst}
+\usepackage{subfigure}
+\usepackage{color}
+%\usepackage{times}
+
+\usepackage{listings}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+    language=c,
+    basicstyle=\scriptsize,
+    upquote=true,
+    aboveskip={0.1\baselineskip},
+    columns=fullflexible,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt, 
+    extendedchars=true,
+    breaklines=true,
+    showtabs=false,
+    showspaces=false,
+    identifierstyle=\ttfamily,
+    keywordstyle=\color[rgb]{0,0,1},
+    %commentstyl-e=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{0.627,0.126,0.941},
+    tabsize=3,
+}
+
+
+\usetheme{Warsaw}
+\usefonttheme{professionalfonts}
+\usenavigationsymbolstemplate{}
+\title{Árvore 2-3}
+
+
+\author[Luigi, Rafael A. e Rafael F.]{ Luigi Wagner \\ Rafael Alessandro \\ Rafael Falcão
+}
+\institute{
+        Ciências da Computação -- Disciplina: Estruturas de Dados -- 1 \\
+	Instituto de Informática \\
+	Universidade Federal de Goiás
+}
+
+\date{\today}
+
+\AtBeginSection[]
+{
+ \begin{frame}<beamer>
+  \frametitle{Sumário}
+  \tableofcontents[currentsection]
+ \end{frame}
+}
+
+
+\begin{document}
+\frame{\titlepage}
+%
+%---------------------------------------------------------------------------------------------------
+% Primeiro Tópico
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Introdução}
+
+\frame { \frametitle{Introdução}
+    Uma Árvore 2-3 é uma árvore onde cada nó com filho (nó interno) tem também 2 filhos (2-node) e 1 elemento de dados (chave) ou 3 filhos (3-nodes) e 2 elementos de dados (chaves).
+Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois elementos de dados (chaves).
+}
+
+%\frame { \frametitle{Introdução}
+%	Cada \texttt{seção} (ou \emph{section}, em LaTeX) deve corresponder a um dos tópicos a serem abordados naquele tema.
+%	\newline
+%	\newline
+%	As \texttt{seções} podem, livremente, serem subdividas em subseções e subsubseções.
+%}
+
+\frame { \frametitle{Introdução}
+	\begin{block}{Propriedades}
+		As principais \texttt{propriedades} de uma Árvore 2-3 são:
+		%\newline
+		\newline
+		\begin{itemize}
+		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves; 
+		      \item Cada nó não-folha tem 2 ou 3 filhos. Se tem 2 filhos tem 1 item de dados e se tem 3 filhos tem 2 itens de dados;
+		      \item Todos os dados são ordenados;
+		      \item Todas as folhas estão no mesmo nível;
+		      \item Cada nó folha tem 1 ou 2 campos.
+		      %\item $\dots$
+		\end{itemize}
+        Como, por exemplo:
+	\end{block}
+}
+
+\frame { \frametitle{Introdução}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.8\textwidth]{./fig/23tree2.png}	
+		\caption{\url{https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/figuressw/Chapter3/TTsearch.png}}
+        \end{figure}
+}
+
+% $\mathcal{L}$ << FICA MAIS COOL A LETRA
+
+\frame { \frametitle{Introdução}
+	\begin{block}{\textit{Componentes ou Anatomia}}
+		Uma Árvore 2-3 é composta por:
+		\begin{enumerate}
+		      \item Componente 1;
+		      \item Componente 2;
+		      \item Componente 3.
+		\end{enumerate}
+	\end{block}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.4\textwidth]{./fig/23tree.png}
+		\caption{\url{https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/figuressw/Chapter3/TTanatomy.png}}
+        \end{figure}
+}
+
+\frame { \frametitle{Introdução}
+	\begin{block}{Bloco}
+		Um \texttt{bloco} pode conter figuras, tabelas, listas, etc.
+	\end{block}
+	
+}
+%
+%---------------------------------------------------------------------------------------------------
+% Segundo Tópico
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Códigos}
+
+%\frame { \frametitle{Acerca dos código}
+%	Aqui começamos um segundo tópico, ou seja, a segunda seção dos \emph{slides}
+%	\begin{itemize}
+%	 	\item Operações sobre linguagens;
+%	 	\item Expressões regulares.
+%	\end{itemize}
+%}
+
+
+%\frame { \frametitle{Segundo Tópico}
+%	\begin{block}{Matemático}
+%		Um \emph{slide} pode utilizar símbolos matemáticos, como:
+%		\begin{itemize}
+%   		\item $\epsilon$ é uma letra grega que normalmente denota quantidades extremamente pequenas; 
+%    		\item $\alpha$, $\beta$, e $\gamma$ são outras letras gregas.
+%   		\end{itemize}
+%	\end{block}
+%}
+
+\frame { \frametitle{Segundo Tópico}
+	\begin{block}{Programas}
+		Agora que já vimos como funciona e os princípios básicos
+		das  \textcolor{blue}{Árvores 2-3}, daremos uma olhada nas \texttt{estruturas} e \texttt{algoritmos} para a manipulação
+		e armazenamento das supracitadas \textcolor{blue}{Árvores 2-3}.
+		\begin{enumerate}
+		      \item Estrutura básica (\textcolor{blue}{Struct});
+		      \item Alocação da \textcolor{blue}{Árvore 2-3}.
+		\end{enumerate}
+
+	\end{block}
+}
+
+\begin{frame}[fragile]
+\frametitle{}
+  \vspace{-0.3cm}
+  \begin{block}{Estrutura de uma Árvore 2-3}
+     	\begin{lstlisting}
+	    typedef struct _23tree_link {
+	      struct 23tree_node *node;  //internal node
+	      int item;
+	    } 23tree_link;    
+    	\end{lstlisting}
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{Alocação de uma Árvore 2-3}
+		\begin{lstlisting}
+		23tree *23tree_alloc() {
+			23tree *t;
+			23tree_node *r;
+
+			t = malloc(sizeof(23tree));
+			t->n = 0;
+			t->min_item = NULL;
+			t->stack = malloc(STACK_SIZE * sizeof(23tree_node *));
+			r = t->root = malloc(sizeof(23tree_node));
+			r->key1 = r->key2 = NULL;
+			r->link_kind = LEAF;
+			r->left.item = r->middle.item = r->right.item;
+
+			return t;
+		}
+		\end{lstlisting}
+
+  	\end{block}      
+\end{frame}
+
+
+
+%  GUARDANDO PRA UM FUTURO
+%\begin{frame}{Código}
+%	\begin{block}{Programa 02}
+%		\lstinputlisting[language=c]{./programas/declaracaoEstruturas.c}
+% 	\end{block}      
+%\end{frame}
+
+
+
+%
+%---------------------------------------------------------------------------------------------------
+% Terceiro tópico
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Terceiro Tópico}
+
+\frame { \frametitle{Terceiro Tópico}
+	\begin{block}{Tabelas}
+		Qualquer recursos disponível no \texttt{LaTeX} e seus pacotes complementares podem ser utilizados, desde que ao 
+final a equipe gere um arquivo compactado (extensão .zip) contendo toda a ``\emph{pasta}'' com os \emph{slides} 
+desenvolvidos.
+		\newline
+		\newline
+		A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
+	\end{block}
+}
+
+\frame { \frametitle{Terceiro Tópico}
+	\begin{block}{Exemplo 01}
+		Exemplos devem utilizar um \texttt{bloco} para serem apresentados, como o que está acontecendo neste momento, 
+ou seja, um bloco está sendo utilizado e seu título é \texttt{Exemplo 01}. 
+		\newline
+		\newline 
+		Você também pode utilizar \textcolor{blue}{cores} para dar destaque no texto.
+	\end{block}
+}
+%
+%---------------------------------------------------------------------------------------------------
+% Questionário
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Questionário}
+
+\frame { \frametitle{Questionário}
+	Deve haver, ao final, uma seção dedicada à apresentação de um questionário com pelo menos $05$ (cinco) questões, e 
+suas respectivas respostas esperadas.
+	\newline
+	\newline
+	Cada questão deverá ser um \texttt{bloco}, o mesmo ocorrendo com a resposta esperada.
+	\newline
+	\newline
+	Veja o exemplo....
+}
+
+\frame { \frametitle{Questionário}
+	\begin{block}{Questão 01}
+	      Enunciado da primeira questão, se necessário com figuras, tabelas, e tudo mais.
+	\end{block}
+}	
+
+\frame { \frametitle{Questionário}
+	\begin{block}{Questão 01 -- Resposta Esperada}
+	      Bloco com a resposta esperada para a primeira questão.
+	\end{block}
+}	
+%
+%---------------------------------------------------------------------------------------------------
+% Referências Bibliográficas
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Referências Bibliográficas}
+
+%\frame { \frametitle{Referências Bibliográficas}
+%	A última seção dos \emph{slides} deve apresentar as referências bibliográficas do trabalho: artigos, 
+%\emph{websites}, livros, capítulos de livros, etc.
+%	\newline
+%	\newline
+%	Veja o exemplo...
+%}
+
+
+\frame { \frametitle{Referências Bibliográficas}
+	\begin{itemize}
+	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
+	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
+	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
+Lexical Analysis}.
+	\end{itemize}
+}
+
+\frame { \frametitle{Referências Bibliográficas}
+	Se desejar, pode encerrar com uma imagem, uma citação, etc.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.50\textwidth]{./fig/MarkKostabi01.jpg}
+		\caption{by Mark Kostabi.} 
+\label{fig:traducaoRIparaLO}
+   	\end{figure}
+}
+
+\end{document}
