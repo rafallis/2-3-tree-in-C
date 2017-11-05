@@ -4,6 +4,12 @@ echo "starting application..."
 #sleep 2
 
 #------ argument selection -------#
+if [ $# -eq 0 ] || [ $1 == '-h' ] || [ $1 == '-help' ];
+then
+    echo "usage -> -v [version] -h [tree_height]"
+    exit 0
+fi
+
 while getopts v:h: option
 do
   case "${option}"
