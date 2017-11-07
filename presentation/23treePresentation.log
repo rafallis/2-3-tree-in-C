@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  7 NOV 2017 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  7 NOV 2017 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,29 +896,29 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 73.
+(hyperref)                removing `\\' on input line 74.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 73.
+(hyperref)                removing `\\' on input line 74.
 
 (./23treePresentation.aux)
 \openout1 = `23treePresentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -984,7 +984,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -994,9 +994,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
 
 (./23treePresentation.out) (./23treePresentation.out)
 \@outlinefile=\write6
@@ -1027,7 +1027,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 91.
+LaTeX Info: Redefining \includegraphics on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -1037,7 +1037,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 (./23treePresentation.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 92.
+(Font)              size <5> substituted on input line 98.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1052,14 +1052,14 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 <./fig/23tree2.png, id=116, 1204.5pt x 821.0675pt>
 File: ./fig/23tree2.png Graphic file (type png)
  <use ./fig/23tree2.png>
-Package pdftex.def Info: ./fig/23tree2.png used on input line 135.
+Package pdftex.def Info: ./fig/23tree2.png used on input line 141.
 (pdftex.def)             Requested size: 245.83282pt x 167.56822pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 135.
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 135.
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1070,10 +1070,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./fig/23tree.png Graphic file (type png)
 
 <use ./fig/23tree.png>
-Package pdftex.def Info: ./fig/23tree.png used on input line 153.
+Package pdftex.def Info: ./fig/23tree.png used on input line 159.
 (pdftex.def)             Requested size: 122.91406pt x 86.03104pt.
 
-Overfull \vbox (8.41165pt too high) detected at line 153
+Overfull \vbox (8.41165pt too high) detected at line 159
  []
 
 [6
@@ -1139,10 +1139,10 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 File: ./fig/MarkKostabi01.jpg Graphic file (type jpg)
 
 <use ./fig/MarkKostabi01.jpg>
-Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 350.
+Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 356.
 (pdftex.def)             Requested size: 153.64493pt x 187.73215pt.
 
-Overfull \vbox (21.12999pt too high) detected at line 350
+Overfull \vbox (21.12999pt too high) detected at line 356
  []
 
 [22
@@ -1157,11 +1157,11 @@ Overfull \vbox (21.12999pt too high) detected at line 350
 \tf@snm=\write9
 \openout9 = `23treePresentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 358.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 358.
  (./23treePresentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 358.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 358.
 Package rerunfilecheck Info: File `23treePresentation.out' has not changed.
 (rerunfilecheck)             Checksum: E282E2067F79BF2101F9F04AE6D7EE57;266.
 
@@ -1172,12 +1172,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 358.
  ) 
 Here is how much of TeX's memory you used:
  20843 strings out of 494929
  378635 string characters out of 6180141
- 543271 words of memory out of 5000000
+ 542271 words of memory out of 5000000
  23574 multiletter control sequences out of 15000+600000
  13309 words of font info for 52 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -1192,7 +1192,7 @@ fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt8.pfb>
-Output written on 23treePresentation.pdf (22 pages, 776291 bytes).
+Output written on 23treePresentation.pdf (22 pages, 776690 bytes).
 PDF statistics:
  401 PDF objects out of 1000 (max. 8388607)
  336 compressed objects within 4 object streams
