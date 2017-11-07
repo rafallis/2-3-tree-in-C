@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <assert.h>
+
+#define PRINT_SUCCESS() printf("%s...SUCCESS\n", __PRETTY_FUNCTION__)
 
 #endif

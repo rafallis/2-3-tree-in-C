@@ -12,7 +12,7 @@
   r = t->root = malloc(sizeof(23tree_node));
   r->key1 = r->key2 = NULL;
   r->link_kind = LEAF;
-  r->left.item = r->middle.item = r->right.item;
+  r->left.item = r->middle.item = r->right.item = NULL;
 
   return t;
 }
