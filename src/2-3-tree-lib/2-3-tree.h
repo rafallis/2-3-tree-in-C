@@ -10,12 +10,12 @@
  * Those who pointes to leaf and those who points to other nodes.
  *
  * @node points to a 2-3 tree node.
- * @item item value of a node.
+ * @data item value of a node.
  */
-struct 23tree_node;
+struct _23tree_node;
 typedef struct _23tree_link {
-  struct 23tree_node *node;  //internal node
-  int item;
+  struct _23tree_node *node;  //internal node
+  int data;
 } 23tree_link;
 
 /**
@@ -25,22 +25,20 @@ typedef struct _23tree_link {
  * @link_kink defines if node is leaf or internal.
  */
 typedef struct _23tree_node {
-  int *key1, *key2;
-  23tree_link left, middle, right;
+  int key1, key2;
+  23tree_link *left, *middle, *right;
   enum { LEAF, INTERNAL } link_kind;
 } 23tree_node;
 
 /**
- * @root points to the root node.
  * @n number of data items stored.
- * @min_item points to the minimum item in the tree.
+ * @root points to the root node.
  * @stack stack of items in the tree.
  */
 typedef struct _23tree {
-  23tree_node *root;
-  int n;
-  int *min_item;
-  23tree_node **stack;
+    int n;
+    23tree_node *root;
+    23tree_node **stack;
 } 23tree;
 
 /**
