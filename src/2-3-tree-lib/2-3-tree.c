@@ -31,7 +31,7 @@ void 23tree_free(23tree *tree) {
       stack[tos++] = p->left.node;
       stack[tos++] = p->middle.node;
       if(p->right.node) stack[tos++] = p->right.node;
-    }
+  }x
     free(p);
   }
 
@@ -96,7 +96,7 @@ void *23tree_insert(23tree *tree, int item) {
         //tree has more than 2 keys
         else {
             if(item < tree->root->key1) {
-                
+            
             } else if item < tree->root->key2) {
 
             } else {
