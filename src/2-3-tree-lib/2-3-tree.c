@@ -2,8 +2,8 @@
 
 /********** 23tree_alloc **********/
 23tree *23tree_alloc() {
-  23tree *t;
-  23tree_node *r;
+  23tree *tree;
+  23tree_node *root;
 
   tree = malloc(sizeof(23tree));
   tree->n = 0;
