@@ -14,7 +14,7 @@
 %
 %===================================================================================================
 %
-\documentclass[cyan,compress]{beamer}
+\documentclass[cyan,compress,aspectratio=43]{beamer}
 \definecolor{mycolor}{rgb}{.0,.545,.545}
 \usecolortheme[named=mycolor]{structure}
 %\usepackage[dvips]{graphicx}            % to include images
@@ -30,13 +30,12 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{url}
-% \usepackage[vlined,titlenumbered,algo2e,ruled]{algorithm2e} 
+%\usepackage[vlined,titlenumbered,algo2e,ruled]{algorithm2e} 
 \usepackage[english, ruled, vlined, longend]{algorithm2e}
 \usepackage{indentfirst}
 \usepackage{subfigure}
 \usepackage{color}
 %\usepackage{times}
-
 \usepackage{listings}
 \definecolor{listinggray}{gray}{0.9}
 \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
@@ -57,11 +56,10 @@
     showspaces=false,
     identifierstyle=\ttfamily,
     keywordstyle=\color[rgb]{0,0,1},
-    %commentstyl-e=\color[rgb]{0.133,0.545,0.133},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
     stringstyle=\color[rgb]{0.627,0.126,0.941},
     tabsize=3,
 }
-
 
 \usetheme{Warsaw}
 \usefonttheme{professionalfonts}
@@ -87,6 +85,11 @@
  \end{frame}
 }
 
+%INSERIR NÚMERO DA PÁGINA
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber
+}
 
 \begin{document}
 \frame{\titlepage}
@@ -184,7 +187,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 %	\end{block}
 %}
 
-\frame { \frametitle{Segundo Tópico}
+\frame { \frametitle{}
 	\begin{block}{Programas}
 		Agora que já vimos como funciona e os princípios básicos
 		das  \textcolor{blue}{Árvores 2-3}, daremos uma olhada nas \texttt{estruturas} e \texttt{algoritmos} para a manipulação
@@ -198,14 +201,14 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 }
 
 \begin{frame}[fragile]
-\frametitle{}
+\frametitle{Código}
   \vspace{-0.3cm}
   \begin{block}{Estrutura de uma Árvore 2-3}
      	\begin{lstlisting}
-	    typedef struct _23tree_link {
-	      struct 23tree_node *node;  //internal node
-	      int item;
-	    } 23tree_link;    
+	  typedef struct _23tree_link {
+	    struct 23tree_node *node;  //internal node
+	    int item;
+	  } 23tree_link;    
     	\end{lstlisting}
   \end{block}
 \end{frame}
@@ -215,27 +218,121 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
       \vspace{-0.3cm}
 	\begin{block}{Alocação de uma Árvore 2-3}
 		\begin{lstlisting}
-		23tree *23tree_alloc() {
-			23tree *t;
-			23tree_node *r;
+		  23tree *23tree_alloc() {
+		    23tree *t;
+		    23tree_node *r;
+		    t = malloc(sizeof(23tree));
+		    t->n = 0;
+		    t->min_item = NULL;
+		    t->stack = malloc(STACK_SIZE * sizeof(23tree_node *));
+		    r = t->root = malloc(sizeof(23tree_node));
+		    r->key1 = r->key2 = NULL;
+		    r->link_kind = LEAF;
+		    r->left.item = r->middle.item = r->right.item;
 
-			t = malloc(sizeof(23tree));
-			t->n = 0;
-			t->min_item = NULL;
-			t->stack = malloc(STACK_SIZE * sizeof(23tree_node *));
-			r = t->root = malloc(sizeof(23tree_node));
-			r->key1 = r->key2 = NULL;
-			r->link_kind = LEAF;
-			r->left.item = r->middle.item = r->right.item;
-
-			return t;
+		    return t;
 		}
 		\end{lstlisting}
 
   	\end{block}      
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{Busca em uma Árvore 2-3}
+		\begin{lstlisting}
+		  no23 *find(no23 *raiz, int key) {
+		    if(raiz==NULL)
+		      return NULL;      // nao encontrou
+		    if(key == raiz->lkey)
+		      return raiz;      //  retorna chave esquerda
+		    if((raiz->nkeys == 2) && (key == raiz->rkey))
+		      return raiz;      // retorna a chave direita
+		    if(key < raiz->lkey)
+		      return find(raiz->left, key);
+		    else if(raiz->nkeys == 1)
+		      return find(raiz->center, key);
+		    else if (key < raiz->rkey)
+		      return find(raiz->center, key);
+		    else
+		      return find(raiz->right, key);
+		  }
+		\end{lstlisting}
 
+  	\end{block}      
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{}
+		\begin{lstlisting}
+		  no23 *insere( no23 **no, int val, int *rval){
+		    no23 *paux, *paux2;
+		    int   vaux, promov;
+		    if (*no == NULL) {    // arvore vazia
+		      *no = (no23 *) malloc (sizeof(no23));
+		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor 
+		      return NULL;       // nada a fazer depois
+		    }
+		    if (isLeaf(*no)){     // chegou a folha
+		      if ((*no)->nkeys == 1){ // caso facil
+			adicionaChave(*no, val, NULL);
+			return NULL;
+		      }else{
+			paux = quebraNo(*no, val, &vaux, NULL);
+			    *rval = vaux;
+			    return paux;
+			}
+		      }
+		\end{lstlisting}
 
+  	\end{block}      
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{}
+		\begin{lstlisting}
+
+		    else {// continua a procura
+			if (val < (*no)->lkey)
+			    paux = insere( &((*no)->left), val, &vaux);
+			else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
+			    paux = insere( &((*no)->center), val, &vaux);
+			else   
+			    paux = insere( &((*no)->right), val, &vaux);
+			if (paux == NULL) // nao promoveu
+			    return NULL;
+			else
+			  if ((*no)->nkeys == 1){
+			    adicionaChave(*no, vaux, paux);
+			    return NULL;
+			  } else {
+			      paux2 = quebraNo(*no, vaux, &promov, paux);
+			      *rval = promov;
+			      return paux2;
+			    }
+		      }
+		  }
+	  \end{lstlisting}
+
+  	\end{block}      
+\end{frame}
+
+\frame {
+      \frametitle{}
+	\begin{block}{Inserção}
+		No âmbito das \textcolor{blue}{Árvores 2-3}, daremos uma olhada na inserção.
+		\begin{itemize}
+		      \item Assemelha-se a inserção em uma \textcolor{blue}{Árvore 2-3} à inserção em uma Árvore binária de busca.
+		      \item Estrutura básica (\textcolor{blue}{Struct});
+		      \item Alocação da \textcolor{blue}{Árvore 2-3}.
+		\end{itemize}
+
+		
+	\end{block}
+}
 
 %  GUARDANDO PRA UM FUTURO
 %\begin{frame}{Código}
@@ -321,6 +418,7 @@ suas respectivas respostas esperadas.
 \frame { \frametitle{Referências Bibliográficas}
 	\begin{itemize}
 	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
+	% \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
 	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
 	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
 Lexical Analysis}.
