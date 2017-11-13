@@ -2,8 +2,8 @@
 
 /********** 23tree_alloc **********/
 23tree *23tree_alloc() {
-  23tree *tree;
-  23tree_node *root;
+  23tree *t;
+  23tree_node *r;
 
   tree = malloc(sizeof(23tree));
   tree->n = 0;
@@ -13,7 +13,7 @@
   root->link_kind = LEAF;
   root->left->node = root->middle->node = root->right->node = NULL;
 
-  return tree;
+  return t;
 }
 
 /********** 23tree_free **********/
@@ -96,7 +96,7 @@ void *23tree_insert(23tree *tree, int item) {
         //tree has more than 2 keys
         else {
             if(item < tree->root->key1) {
-            
+
             } else if item < tree->root->key2) {
 
             } else {
