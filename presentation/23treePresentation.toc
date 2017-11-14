@@ -2,6 +2,6 @@
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
 \beamer@sectionintoc {2}{C\IeC {\'o}digos}{8}{0}{2}
-\beamer@sectionintoc {3}{Terceiro T\IeC {\'o}pico}{16}{0}{3}
-\beamer@sectionintoc {4}{Question\IeC {\'a}rio}{19}{0}{4}
-\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{23}{0}{5}
+\beamer@sectionintoc {3}{Terceiro T\IeC {\'o}pico}{15}{0}{3}
+\beamer@sectionintoc {4}{Question\IeC {\'a}rio}{18}{0}{4}
+\beamer@sectionintoc {5}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{22}{0}{5}
