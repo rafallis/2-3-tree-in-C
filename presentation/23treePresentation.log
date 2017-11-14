@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  13 NOV 2017 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.9)  14 NOV 2017 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **23treePresentation.tex
 (./23treePresentation.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 6 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
 Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
@@ -711,8 +711,6 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \U@D=\dimen188
 LaTeX Info: Redefining \textlatin on input line 1448.
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -1129,37 +1127,39 @@ Overfull \vbox (12.79039pt too high) detected at line 355
 
 ] [14
 
-] (./23treePresentation.toc) [15
+] [15
 
-] [16
+] (./23treePresentation.toc) [16
 
 ] [17
 
-] (./23treePresentation.toc)
-[18
+] [18
 
-] [19
+]
+(./23treePresentation.toc) [19
 
 ] [20
 
 ] [21
 
-] (./23treePresentation.toc) [22
+] [22
 
-] [23
+] (./23treePresentation.toc)
+[23
 
-]
-<./fig/MarkKostabi01.jpg, id=362, 414.04688pt x 505.89pt>
+] [24
+
+] <./fig/MarkKostabi01.jpg, id=373, 414.04688pt x 505.89pt>
 File: ./fig/MarkKostabi01.jpg Graphic file (type jpg)
 
 <use ./fig/MarkKostabi01.jpg>
-Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 469.
+Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 483.
 (pdftex.def)             Requested size: 153.64493pt x 187.73215pt.
 
-Overfull \vbox (21.12999pt too high) detected at line 469
+Overfull \vbox (21.12999pt too high) detected at line 483
  []
 
-[24
+[25
 
  <./fig/MarkKostabi01.jpg>]
 \tf@nav=\write7
@@ -1171,11 +1171,11 @@ Overfull \vbox (21.12999pt too high) detected at line 469
 \tf@snm=\write9
 \openout9 = `23treePresentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 471.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 471.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
  (./23treePresentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 471.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 471.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
 Package rerunfilecheck Info: File `23treePresentation.out' has not changed.
 (rerunfilecheck)             Checksum: E282E2067F79BF2101F9F04AE6D7EE57;266.
 
@@ -1186,15 +1186,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 485.
  ) 
 Here is how much of TeX's memory you used:
- 20885 strings out of 494929
- 379098 string characters out of 6180141
- 676366 words of memory out of 5000000
- 23609 multiletter control sequences out of 15000+600000
+ 20887 strings out of 494888
+ 379113 string characters out of 6179127
+ 676516 words of memory out of 5000000
+ 23616 multiletter control sequences out of 15000+600000
  12958 words of font info for 51 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
+ 38 hyphenation exceptions out of 8191
  48i,16n,64p,438b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
@@ -1205,10 +1205,10 @@ fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb>
-Output written on 23treePresentation.pdf (24 pages, 774098 bytes).
+Output written on 23treePresentation.pdf (25 pages, 775790 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 57 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
