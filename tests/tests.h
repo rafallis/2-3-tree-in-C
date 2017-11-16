@@ -11,7 +11,6 @@ void alloc_test() {
     tree = 23tree_alloc();
 
     assert(tree->n == 0);
-    assert(tree->min_item == NULL);
     assert(tree->root->key1 == 0);
     assert(tree->root->key2 == 0);
     assert(tree->root->link_kind == LEAF);
