@@ -121,7 +121,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves; 
 		      \item Cada nó não-folha tem 2 ou 3 filhos. Se tem 2 filhos tem 1 item de dados e se tem 3 filhos tem 2 itens de dados;
 		      \item Todos os dados são ordenados;
-		      \item Todas as folhas estão no mesmo nível;
+		      \item Todas as folhas estão no mesmo nível- assim como na Árvore B;
 		      \item Cada nó folha tem 1 ou 2 campos.
 		      %\item $\dots$
 		\end{itemize}
@@ -160,6 +160,114 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		Um \texttt{bloco} pode conter figuras, tabelas, listas, etc.
 	\end{block}
 	
+}
+
+%
+%---------------------------------------------------------------------------------------------------
+% Pesquisa
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Pesquisa}
+
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	\begin{block}{}
+		Vamos começar pelo mais básico procedimento a ser realizado
+		ao lidar com uma \color{blue}{Árvore}.
+	\end{block}
+	
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Exemplo de uma Árvore 2-3
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree3.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree4.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree5.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree6.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+%
+%---------------------------------------------------------------------------------------------------
+% Pesquisa
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Inserção}
+
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	\begin{block}{}
+		Continuando os procedimentos, vamos à \textit{Inserção} em uma \color{blue}{Árvore 2-3}.
+	\end{block}
+	
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree7.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree8.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree9.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree10.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree11.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree12.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
 }
 %
 %---------------------------------------------------------------------------------------------------
@@ -205,10 +313,14 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
   \vspace{-0.3cm}
   \begin{block}{Estrutura de uma Árvore 2-3}
      	\begin{lstlisting}
-	  typedef struct _23tree_link {
-	    struct 23tree_node *node;  //internal node
-	    int item;
-	  } 23tree_link;    
+	  typedef struct _no23 {
+	    int	lkey,             // chave esquerda
+		    rkey,             // chave direita
+		    nkeys;            // numero de chaves
+	    struct _no23	*left,    // ponteiro ao filho esquerdo 
+				    *center,  // ponteiro ao filho central
+				    *right;   // ponteiro ao filho direito
+	  } no23;   
     	\end{lstlisting}
   \end{block}
 \end{frame}
@@ -261,65 +373,98 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 
   	\end{block}      
 \end{frame}
+
+% \begin{frame}[fragile]
+% \frametitle{Código}
+%       \vspace{-0.3cm}
+% 	\begin{block}{}
+% 		\begin{lstlisting}
+% 		  no23 *insere( no23 **no, int val, int *rval){
+% 		    no23 *paux, *paux2;
+% 		    int   vaux, promov;
+% 		    if (*no == NULL) {    // arvore vazia
+% 		      *no = (no23 *) malloc (sizeof(no23));
+% 		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor 
+% 		      return NULL;       // nada a fazer depois
+% 		    }
+% 		    if (isLeaf(*no)){     // chegou a folha
+% 		      if ((*no)->nkeys == 1){ // caso facil
+% 			adicionaChave(*no, val, NULL);
+% 			return NULL;
+% 		      }else{
+% 			paux = quebraNo(*no, val, &vaux, NULL);
+% 			*rval = vaux;
+% 			return paux;
+% 		      }
+% 		    }
+% 		\end{lstlisting}
+% 
+%   	\end{block}      
+% \end{frame}
+% 
+% \begin{frame}[fragile]
+% \frametitle{Código}
+%       \vspace{-0.3cm}
+% 	\begin{block}{}
+% 		\begin{lstlisting}
+% 
+% 		    else{// continua a procura
+% 		      if (val < (*no)->lkey)
+% 			paux = insere( &((*no)->left), val, &vaux);
+% 		    else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
+% 			paux = insere( &((*no)->center), val, &vaux);
+% 		    else   
+% 			paux = insere( &((*no)->right), val, &vaux);
+% 		    if(paux == NULL) // nao promoveu
+% 		      return NULL;
+% 		    else if ((*no)->nkeys == 1){
+% 		      adicionaChave(*no, vaux, paux);
+% 		      return NULL;
+% 		    }else{
+% 		      paux2 = quebraNo(*no, vaux, &promov, paux);
+% 		      *rval = promov;
+% 		      return paux2;
+% 		    }
+% 		   }
+% 		  }
+% 	  \end{lstlisting}
+% 
+%   	\end{block}      
+%\end{frame}
+
 \begin{frame}[fragile]
-\frametitle{Código}
-      \vspace{-0.3cm}
-	\begin{block}{}
+\frametitle{}
+      \vspace{-0.2cm}
+	\begin{block}{Quebra Nó}
 		\begin{lstlisting}
-		  no23 *insere( no23 **no, int val, int *rval){
-		    no23 *paux, *paux2;
-		    int   vaux, promov;
-		    if (*no == NULL) {    // arvore vazia
-		      *no = (no23 *) malloc (sizeof(no23));
-		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor 
-		      return NULL;       // nada a fazer depois
+		  no23 *quebraNo(no23 *no, int val, int *rval, no23 *subarvore){
+		    no23 *paux;
+		    if (val > no->rkey) {  // val esta mais a direita
+		      *rval = no->rkey;   // promove a antiga maior
+		      paux = no->right;
+		      no->right = NULL;   // elimina o terceiro filho
+		      no->nkeys = 1;      // atualiza o numero de chaves
+		      return criaNo(val, 0, 1, paux, subarvore, NULL);
+		    }else if(val >= no->lkey){ // val esta no meio
+		      *rval = val;        // continua sendo promovido
+		      paux = no->right;
+		      no->right = NULL;
+		      no->nkeys = 1;
+		      return criaNo(no->rkey, 0, 1, subarvore, paux, NULL);
+		    }else{              // val esta a mais a esquerda
+		      *rval = no->lkey;    // primeiro cria o noh a direita
+		      paux = criaNo(no->rkey, 0, 1, no->center, no->right, NULL);
+		      no->lkey = val;   // em seguida arruma o noh a esquerda
+		      no->nkeys = 1;
+		      no->right = NULL;
+		      no->center = subarvore;
+		      return paux;
 		    }
-		    if (isLeaf(*no)){     // chegou a folha
-		      if ((*no)->nkeys == 1){ // caso facil
-			adicionaChave(*no, val, NULL);
-			return NULL;
-		      }else{
-			paux = quebraNo(*no, val, &vaux, NULL);
-			    *rval = vaux;
-			    return paux;
-			}
-		      }
-		\end{lstlisting}
-
-  	\end{block}      
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Código}
-      \vspace{-0.3cm}
-	\begin{block}{}
-		\begin{lstlisting}
-
-		    else {// continua a procura
-			if (val < (*no)->lkey)
-			    paux = insere( &((*no)->left), val, &vaux);
-			else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
-			    paux = insere( &((*no)->center), val, &vaux);
-			else   
-			    paux = insere( &((*no)->right), val, &vaux);
-			if (paux == NULL) // nao promoveu
-			    return NULL;
-			else
-			  if ((*no)->nkeys == 1){
-			    adicionaChave(*no, vaux, paux);
-			    return NULL;
-			  } else {
-			      paux2 = quebraNo(*no, vaux, &promov, paux);
-			      *rval = promov;
-			      return paux2;
-			    }
-		      }
 		  }
 	  \end{lstlisting}
 
   	\end{block}      
 \end{frame}
-
 \frame {
       \frametitle{}
 	\begin{block}{Inserção}
@@ -333,6 +478,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		
 	\end{block}
 }
+
 
 %  GUARDANDO PRA UM FUTURO
 %\begin{frame}{Código}
@@ -416,13 +562,14 @@ suas respectivas respostas esperadas.
 
 
 \frame { \frametitle{Referências Bibliográficas}
-	\begin{itemize}
+	\begin{enumerate}
 	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
-	% \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
+	 \item \url{https://www.passeidireto.com/disciplina/algoritmos-e-estrutura-de-dados-iii?type=6&materialid=1012744}
+	 \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
 	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
 	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
 Lexical Analysis}.
-	\end{itemize}
+	\end{enumerate}
 }
 
 \frame { \frametitle{Referências Bibliográficas}

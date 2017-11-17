@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.9)  14 NOV 2017 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.25)  17 NOV 2017 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **23treePresentation.tex
 (./23treePresentation.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 6 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
 Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
@@ -711,6 +711,8 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \U@D=\dimen188
 LaTeX Info: Redefining \textlatin on input line 1448.
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -1047,7 +1049,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-<./fig/23tree2.png, id=116, 1204.5pt x 821.0675pt>
+<./fig/23tree2.png, id=138, 1204.5pt x 821.0675pt>
 File: ./fig/23tree2.png Graphic file (type png)
  <use ./fig/23tree2.png>
 Package pdftex.def Info: ./fig/23tree2.png used on input line 138.
@@ -1063,7 +1065,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
- <./fig/23tree2.png (PNG copy)>] <./fig/23tree.png, id=131, 1204.5pt x 843.15pt
+ <./fig/23tree2.png (PNG copy)>] <./fig/23tree.png, id=155, 1204.5pt x 843.15pt
 >
 File: ./fig/23tree.png Graphic file (type png)
 
@@ -1083,10 +1085,103 @@ Overfull \vbox (8.41165pt too high) detected at line 156
 ] [9
 
 ]
+<./fig/23tree3.png, id=220, 1057.9525pt x 469.755pt>
+File: ./fig/23tree3.png Graphic file (type png)
+ <use ./fig/23tree3.png>
+Package pdftex.def Info: ./fig/23tree3.png used on input line 186.
+(pdftex.def)             Requested size: 307.28987pt x 136.44049pt.
+
+[10
+
+ <./fig/23tree3.png>] <./fig/23tree4.png, id=236, 1141.26375pt x 550.055pt>
+File: ./fig/23tree4.png Graphic file (type png)
+
+<use ./fig/23tree4.png>
+Package pdftex.def Info: ./fig/23tree4.png used on input line 194.
+(pdftex.def)             Requested size: 307.28987pt x 148.10556pt.
+ [11
+
+ <./fig/23tree4.png>]
+<./fig/23tree5.png, id=251, 1151.30125pt x 503.8825pt>
+File: ./fig/23tree5.png Graphic file (type png)
+ <use ./fig/23tree5.png>
+Package pdftex.def Info: ./fig/23tree5.png used on input line 202.
+(pdftex.def)             Requested size: 307.28987pt x 134.4893pt.
+
+[12
+
+ <./fig/23tree5.png>] <./fig/23tree6.png, id=266, 1146.2825pt x 531.9875pt>
+File: ./fig/23tree6.png Graphic file (type png)
+
+<use ./fig/23tree6.png>
+Package pdftex.def Info: ./fig/23tree6.png used on input line 210.
+(pdftex.def)             Requested size: 307.28987pt x 142.61574pt.
+ [13
+
+ <./fig/23tree6.png>] (./23treePresentation.toc)
+[14
+
+] [15
+
+] <./fig/23tree7.png, id=315, 1020.81375pt x 573.14125pt>
+File: ./fig/23tree7.png Graphic file (type png)
+
+<use ./fig/23tree7.png>
+Package pdftex.def Info: ./fig/23tree7.png used on input line 231.
+(pdftex.def)             Requested size: 307.28987pt x 172.52963pt.
+
+Overfull \vbox (4.35387pt too high) detected at line 231
+ []
+
+[16
+
+ <./fig/23tree7.png>] <./fig/23tree8.png, id=330, 815.045pt x 586.19pt>
+File: ./fig/23tree8.png Graphic file (type png)
+
+<use ./fig/23tree8.png>
+Package pdftex.def Info: ./fig/23tree8.png used on input line 239.
+(pdftex.def)             Requested size: 245.83282pt x 176.80647pt.
+
+Overfull \vbox (8.6307pt too high) detected at line 239
+ []
+
+[17
+
+ <./fig/23tree8.png>] <./fig/23tree9.png, id=345, 967.615pt x 572.1375pt>
+File: ./fig/23tree9.png Graphic file (type png)
+
+<use ./fig/23tree9.png>
+Package pdftex.def Info: ./fig/23tree9.png used on input line 247.
+(pdftex.def)             Requested size: 276.559pt x 163.52357pt.
+ [18
+
+ <./fig/23tree9.png>]
+<./fig/23tree10.png, id=360, 985.6825pt x 588.1975pt>
+File: ./fig/23tree10.png Graphic file (type png)
+ <use ./fig/23tree10.png>
+Package pdftex.def Info: ./fig/23tree10.png used on input line 255.
+(pdftex.def)             Requested size: 276.559pt x 165.03523pt.
+
+[19
+
+ <./fig/23tree10.png>]
+<./fig/23tree11.png, id=376, 840.13875pt x 597.23125pt>
+File: ./fig/23tree11.png Graphic file (type png)
+
+<use ./fig/23tree11.png>
+Package pdftex.def Info: ./fig/23tree11.png used on input line 263.
+(pdftex.def)             Requested size: 215.10196pt x 152.90707pt.
+ [20
+
+ <./fig/23tree11.png>] (./23treePresentation.toc)
+[21
+
+] [22
+
+]
 \openout4 = `23treePresentation.vrb'.
 
-
-(./23treePresentation.vrb
+ (./23treePresentation.vrb
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 5.
 LaTeX Font Info:    No file OMScmss.fd. on input line 5.
 
@@ -1095,7 +1190,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 5.
 
-) [10
+) [23
 
 ]
 \openout4 = `23treePresentation.vrb'.
@@ -1109,55 +1204,55 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
 (Font)              for symbol `textgreater' on input line 9.
 
-) [11
+) [24
 
 ]
 \openout4 = `23treePresentation.vrb'.
 
- (./23treePresentation.vrb) [12
+ (./23treePresentation.vrb) [25
 
 ]
 \openout4 = `23treePresentation.vrb'.
 
  (./23treePresentation.vrb)
-Overfull \vbox (12.79039pt too high) detected at line 355
+Overfull \vbox (12.79039pt too high) detected at line 460
  []
 
-[13
+[26
 
-] [14
+] [27
 
-] (./23treePresentation.toc) [15
+] (./23treePresentation.toc) [28
 
-] [16
+] [29
 
-] [17
+] [30
 
 ] (./23treePresentation.toc)
-[18
+[31
 
-] [19
+] [32
 
-] [20
+] [33
 
-] [21
+] [34
 
-] (./23treePresentation.toc) [22
+] (./23treePresentation.toc) [35
 
-] [23
+] [36
 
 ]
-<./fig/MarkKostabi01.jpg, id=362, 414.04688pt x 505.89pt>
+<./fig/MarkKostabi01.jpg, id=640, 414.04688pt x 505.89pt>
 File: ./fig/MarkKostabi01.jpg Graphic file (type jpg)
 
 <use ./fig/MarkKostabi01.jpg>
-Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 470.
+Package pdftex.def Info: ./fig/MarkKostabi01.jpg used on input line 576.
 (pdftex.def)             Requested size: 153.64493pt x 187.73215pt.
 
-Overfull \vbox (21.12999pt too high) detected at line 470
+Overfull \vbox (21.12999pt too high) detected at line 576
  []
 
-[24
+[37
 
  <./fig/MarkKostabi01.jpg>]
 \tf@nav=\write7
@@ -1169,13 +1264,13 @@ Overfull \vbox (21.12999pt too high) detected at line 470
 \tf@snm=\write9
 \openout9 = `23treePresentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
  (./23treePresentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
 Package rerunfilecheck Info: File `23treePresentation.out' has not changed.
-(rerunfilecheck)             Checksum: E282E2067F79BF2101F9F04AE6D7EE57;266.
+(rerunfilecheck)             Checksum: 2B2E3B40C8EF23431FC07E0B8D0E4095;358.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1184,15 +1279,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 578.
  ) 
 Here is how much of TeX's memory you used:
- 20883 strings out of 494888
- 379078 string characters out of 6179127
- 676516 words of memory out of 5000000
- 23614 multiletter control sequences out of 15000+600000
- 12958 words of font info for 51 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
+ 20993 strings out of 494929
+ 380586 string characters out of 6180141
+ 676366 words of memory out of 5000000
+ 23676 multiletter control sequences out of 15000+600000
+ 13314 words of font info for 52 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
  48i,16n,64p,438b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
@@ -1203,10 +1298,10 @@ fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb>
-Output written on 23treePresentation.pdf (24 pages, 774206 bytes).
+Output written on 23treePresentation.pdf (37 pages, 1111996 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 55 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 606 compressed objects within 7 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

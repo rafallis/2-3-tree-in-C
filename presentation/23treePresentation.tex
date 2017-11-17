@@ -121,7 +121,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves; 
 		      \item Cada nó não-folha tem 2 ou 3 filhos. Se tem 2 filhos tem 1 item de dados e se tem 3 filhos tem 2 itens de dados;
 		      \item Todos os dados são ordenados;
-		      \item Todas as folhas estão no mesmo nível;
+		      \item Todas as folhas estão no mesmo nível- assim como na Árvore B;
 		      \item Cada nó folha tem 1 ou 2 campos.
 		      %\item $\dots$
 		\end{itemize}
@@ -161,6 +161,107 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	\end{block}
 	
 }
+
+%
+%---------------------------------------------------------------------------------------------------
+% Pesquisa
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Pesquisa}
+
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	\begin{block}{}
+		Vamos começar pelo mais básico procedimento a ser realizado
+		ao lidar com uma \color{blue}{Árvore}.
+	\end{block}
+	
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Exemplo de uma Árvore 2-3
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree3.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree4.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree5.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Pesquisa em uma Árvore 2-3}
+	Pesquisando pela chave 72 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree6.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+%
+%---------------------------------------------------------------------------------------------------
+% Inserção
+%---------------------------------------------------------------------------------------------------
+%
+\section[\thesection]{Inserção}
+
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	\begin{block}{}
+		Continuando os procedimentos, vamos à \textit{Inserção} em uma \color{blue}{Árvore 2-3}.
+	\end{block}
+	
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Inserindo a chave 50 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree7.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Inserindo a chave 50 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.8\textwidth]{./fig/23tree8.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Inserindo a chave 5 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.9\textwidth]{./fig/23tree9.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Inserindo a chave 5 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.9\textwidth]{./fig/23tree10.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+	Inserindo a chave 5 na Árvore:
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=.7\textwidth]{./fig/23tree11.png}	
+		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+
 %
 %---------------------------------------------------------------------------------------------------
 % Segundo Tópico
@@ -205,10 +306,14 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
   \vspace{-0.3cm}
   \begin{block}{Estrutura de uma Árvore 2-3}
      	\begin{lstlisting}
-	  typedef struct _23tree_link {
-	    struct 23tree_node *node;  //internal node
-	    int item;
-	  } 23tree_link;    
+	  typedef struct _no23 {
+	    int	lkey,             // chave esquerda
+		    rkey,             // chave direita
+		    nkeys;            // numero de chaves
+	    struct _no23	*left,    // ponteiro ao filho esquerdo 
+				    *center,  // ponteiro ao filho central
+				    *right;   // ponteiro ao filho direito
+	  } no23;   
     	\end{lstlisting}
   \end{block}
 \end{frame}
@@ -450,13 +555,14 @@ suas respectivas respostas esperadas.
 
 
 \frame { \frametitle{Referências Bibliográficas}
-	\begin{itemize}
+	\begin{enumerate}
 	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
-	% \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
+	 \item \url{https://www.passeidireto.com/disciplina/algoritmos-e-estrutura-de-dados-iii?type=6&materialid=1012744}
+	 \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
 	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
 	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
 Lexical Analysis}.
-	\end{itemize}
+	\end{enumerate}
 }
 
 \frame { \frametitle{Referências Bibliográficas}
