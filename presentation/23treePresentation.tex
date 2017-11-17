@@ -612,28 +612,79 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 % Terceiro tópico
 %---------------------------------------------------------------------------------------------------
 %
-\section[\thesection]{Terceiro Tópico}
+\section[\thesection]{Aplicações}
 
-\frame { \frametitle{Terceiro Tópico}
-	\begin{block}{Tabelas}
-		Qualquer recursos disponível no \texttt{LaTeX} e seus pacotes complementares podem ser utilizados, desde que ao 
-final a equipe gere um arquivo compactado (extensão .zip) contendo toda a ``\emph{pasta}'' com os \emph{slides} 
-desenvolvidos.
-		\newline
-		\newline
-		A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
+\frame { \frametitle{Aplicações}
+	\begin{block}{Objetivo}
+		\begin{itemize}
+		      \item Árvores 2-3 foram inventadas para garantir um bom desempenho no \textcolor{red}{pior} caso. 
+		      \item Se você estiver satisfeito com um bom desempenho médio, basta usar um Aŕvore Binária de Busca
+		      %\item $\dots$
+		\end{itemize}		
+		%A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
 	\end{block}
 }
 
-\frame { \frametitle{Terceiro Tópico}
-	\begin{block}{Exemplo 01}
-		Exemplos devem utilizar um \texttt{bloco} para serem apresentados, como o que está acontecendo neste momento, 
-ou seja, um bloco está sendo utilizado e seu título é \texttt{Exemplo 01}. 
-		\newline
-		\newline 
-		Você também pode utilizar \textcolor{blue}{cores} para dar destaque no texto.
+\frame { \frametitle{Aplicações}
+	\begin{block}{Altura}
+		Considere uma árvore 2-3 com N nós.
+		\begin{itemize}
+		      \item Se temos apenas nós simples, a altura da árvore será lg N 
+		      \item Se temos apenas nós duplos, a altura da árvore será ${\log_3 n}$ que é igual a [0.63 lg N]
+		\end{itemize}	
+		\textcolor{red}{Conclusão:} A altura nunca passa de lg N.
 	\end{block}
 }
+
+\frame { \frametitle{Aplicações}
+	\begin{block}{Proposição}
+		Em uma árvore 2-3 com N nós, \textcolor{red}{busca} e \textcolor{red}{inserção} nunca visitam mais que lg N nós - mesmo no pior caso.
+		\begin{itemize}
+		      \item Cada visita faz no máximo 2 comparações de chaves.
+		\end{itemize}		
+	\end{block}
+}
+
+\frame { \frametitle{Aplicações}
+	\begin{block}{Observação}
+		Numa árvore 2-3, alguns nós envolvem uma comparação entre chaves enquanto outros envolvem três comparações.
+		\begin{itemize}
+		      \item Assim, o número de comparações de chaves é no máximo o dobro do número de nós visitados
+		\end{itemize}		
+	\end{block}
+}
+% Verificar forma de adicionar tabela sobre o número de
+% comparações entre chaves numa árvore com N chaves
+\frame { \frametitle{Complexidade} %do algoritmo
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{./fig/23tree24.png}	
+		\caption{Imagem retirada de [1] (vide \textit{Referências Bibliográficas})}
+        \end{figure}
+}
+
+% \section[\thesection]{Terceiro Tópico}
+% 
+% \frame { \frametitle{Terceiro Tópico}
+% 	\begin{block}{Tabelas}
+% 		Qualquer recursos disponível no \texttt{LaTeX} e seus pacotes complementares podem ser utilizados, desde que ao 
+% final a equipe gere um arquivo compactado (extensão .zip) contendo toda a ``\emph{pasta}'' com os \emph{slides} 
+% desenvolvidos.
+% 		\newline
+% 		\newline
+% 		A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
+% 	\end{block}
+% }
+% 
+% \frame { \frametitle{Terceiro Tópico}
+% 	\begin{block}{Exemplo 01}
+% 		Exemplos devem utilizar um \texttt{bloco} para serem apresentados, como o que está acontecendo neste momento, 
+% ou seja, um bloco está sendo utilizado e seu título é \texttt{Exemplo 01}. 
+% 		\newline
+% 		\newline 
+% 		Você também pode utilizar \textcolor{blue}{cores} para dar destaque no texto.
+% 	\end{block}
+% }
 %
 %---------------------------------------------------------------------------------------------------
 % Questionário
