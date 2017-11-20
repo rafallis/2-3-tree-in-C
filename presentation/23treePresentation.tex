@@ -19,9 +19,9 @@
 \usecolortheme[named=mycolor]{structure}
 %\usepackage[dvips]{graphicx}            % to include images
 \usepackage[english,portuguese,brazil]{babel}
-%\usepackage[T1]{fontenc} 
-%\usepackage[ansinew]{inputenc} 
-\usepackage[utf8x]{inputenc}  
+%\usepackage[T1]{fontenc}
+%\usepackage[ansinew]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{float}
@@ -30,7 +30,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{url}
-%\usepackage[vlined,titlenumbered,algo2e,ruled]{algorithm2e} 
+%\usepackage[vlined,titlenumbered,algo2e,ruled]{algorithm2e}
 \usepackage[english, ruled, vlined, longend]{algorithm2e}
 \usepackage{indentfirst}
 \usepackage{subfigure}
@@ -49,7 +49,7 @@
     numbers=left,
     numberstyle=\tiny\color{gray},
     stepnumber=1,
-    numbersep=5pt, 
+    numbersep=5pt,
     extendedchars=true,
     breaklines=true,
     showtabs=false,
@@ -118,7 +118,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		%\newline
 		\newline
 		\begin{itemize}
-		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves; 
+		      \item Cada nó interno tem dois filhos (2-node) se tem uma chave, ou três filhos (3-node) se tem duas chaves;
 		      \item Cada nó não-folha tem 2 ou 3 filhos. Se tem 2 filhos tem 1 item de dados e se tem 3 filhos tem 2 itens de dados;
 		      \item Todos os dados são ordenados;
 		      \item Todas as folhas estão no mesmo nível- assim como na Árvore B;
@@ -132,7 +132,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \frame { \frametitle{Introdução}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=.8\textwidth]{./fig/23tree2.png}	
+		\includegraphics[width=.8\textwidth]{./fig/23tree2.png}
 		\caption{\url{https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/figuressw/Chapter3/TTsearch.png}}
         \end{figure}
 }
@@ -159,7 +159,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	\begin{block}{Bloco}
 		Um \texttt{bloco} pode conter figuras, tabelas, listas, etc.
 	\end{block}
-	
+
 }
 
 %
@@ -174,13 +174,13 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		Vamos começar pelo mais básico procedimento a ser realizado
 		ao lidar com uma \color{blue}{Árvore}.
 	\end{block}
-	
+
 }
 \frame { \frametitle{Pesquisa em uma Árvore 2-3}
 	Exemplo de uma Árvore 2-3
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree3.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree3.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -188,7 +188,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Pesquisando pela chave 72 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree4.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree4.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -196,7 +196,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Pesquisando pela chave 72 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree5.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree5.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -204,7 +204,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Pesquisando pela chave 72 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree6.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree6.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -219,13 +219,13 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	\begin{block}{}
 		Continuando os procedimentos, vamos à \textit{Inserção} em uma \color{blue}{Árvore 2-3}.
 	\end{block}
-	
+
 }
 \frame { \frametitle{Inserção em uma Árvore 2-3}
 	Inserindo a chave 50 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree7.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree7.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -233,7 +233,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Inserindo a chave 50 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=.8\textwidth]{./fig/23tree8.png}	
+		\includegraphics[width=.8\textwidth]{./fig/23tree8.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -241,7 +241,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Inserindo a chave 5 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=.9\textwidth]{./fig/23tree9.png}	
+		\includegraphics[width=.9\textwidth]{./fig/23tree9.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -249,7 +249,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Inserindo a chave 5 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=.9\textwidth]{./fig/23tree10.png}	
+		\includegraphics[width=.9\textwidth]{./fig/23tree10.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -257,7 +257,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Inserindo a chave 5 na Árvore:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=.7\textwidth]{./fig/23tree11.png}	
+		\includegraphics[width=.7\textwidth]{./fig/23tree11.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -274,7 +274,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		Hora de tratarmos do mais complexo dos procedimentos relacionados à uma
 		\textit{Árvore 2-3}, a Remoção.
 	\end{block}
-	
+
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	Começaremos pelo mais simples:
@@ -283,7 +283,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	%item 73
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree12.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree12.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -291,7 +291,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	%item 73
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree13.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree13.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -300,7 +300,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	Exemplo 2:
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree14.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree14.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -318,63 +318,63 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree15.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree15.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree16.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree16.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree17.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree17.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree18.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree18.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree19.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree19.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree20.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree20.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree21.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree21.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree22.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree22.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 \frame { \frametitle{Remoção em uma Árvore 2-3}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree23.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree23.png}
 		\caption{Imagem retirada de [2] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
@@ -386,7 +386,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
  	\end{block}
 }
 
- 
+
  %
 %---------------------------------------------------------------------------------------------------
 % Segundo Tópico
@@ -407,7 +407,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 %	\begin{block}{Matemático}
 %		Um \emph{slide} pode utilizar símbolos matemáticos, como:
 %		\begin{itemize}
-%   		\item $\epsilon$ é uma letra grega que normalmente denota quantidades extremamente pequenas; 
+%   		\item $\epsilon$ é uma letra grega que normalmente denota quantidades extremamente pequenas;
 %    		\item $\alpha$, $\beta$, e $\gamma$ são outras letras gregas.
 %   		\end{itemize}
 %	\end{block}
@@ -430,16 +430,16 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \frametitle{Código}
   \vspace{-0.3cm}
   \begin{block}{Estrutura de uma Árvore 2-3}
-     	\begin{lstlisting}
+    \begin{lstlisting}
 	  typedef struct _no23 {
 	    int	lkey,             // chave esquerda
 		    rkey,             // chave direita
 		    nkeys;            // numero de chaves
-	    struct _no23	*left,    // ponteiro ao filho esquerdo 
+	    struct _no23	*left,    // ponteiro ao filho esquerdo
 				    *center,  // ponteiro ao filho central
 				    *right;   // ponteiro ao filho direito
-	  } no23;   
-    	\end{lstlisting}
+	  } no23;
+    \end{lstlisting}
   \end{block}
 \end{frame}
 
@@ -448,23 +448,17 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
       \vspace{-0.3cm}
 	\begin{block}{Alocação de uma Árvore 2-3}
 		\begin{lstlisting}
-		  23tree *23tree_alloc() {
-		    23tree *t;
-		    23tree_node *r;
-		    t = malloc(sizeof(23tree));
-		    t->n = 0;
-		    t->min_item = NULL;
-		    t->stack = malloc(STACK_SIZE * sizeof(23tree_node *));
-		    r = t->root = malloc(sizeof(23tree_node));
-		    r->key1 = r->key2 = NULL;
-		    r->link_kind = LEAF;
-		    r->left.item = r->middle.item = r->right.item;
-
+		  no23 *23tree_alloc() {
+		    no23 *t;
+		    t = malloc(sizeof(no23));
+		    t->nkeys = 0;
+		    t->lkey = t->rkey = 0;
+		    t->left = t->center = t->right = NULL;
 		    return t;
 		}
 		\end{lstlisting}
 
-  	\end{block}      
+  	\end{block}
 \end{frame}
 \begin{frame}[fragile]
 \frametitle{Código}
@@ -489,7 +483,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		  }
 		\end{lstlisting}
 
-  	\end{block}      
+  	\end{block}
 \end{frame}
 
 % \begin{frame}[fragile]
@@ -502,7 +496,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 % 		    int   vaux, promov;
 % 		    if (*no == NULL) {    // arvore vazia
 % 		      *no = (no23 *) malloc (sizeof(no23));
-% 		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor 
+% 		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor
 % 		      return NULL;       // nada a fazer depois
 % 		    }
 % 		    if (isLeaf(*no)){     // chegou a folha
@@ -516,22 +510,22 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 % 		      }
 % 		    }
 % 		\end{lstlisting}
-% 
-%   	\end{block}      
+%
+%   	\end{block}
 % \end{frame}
-% 
+%
 % \begin{frame}[fragile]
 % \frametitle{Código}
 %       \vspace{-0.3cm}
 % 	\begin{block}{}
 % 		\begin{lstlisting}
-% 
+%
 % 		    else{// continua a procura
 % 		      if (val < (*no)->lkey)
 % 			paux = insere( &((*no)->left), val, &vaux);
 % 		    else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
 % 			paux = insere( &((*no)->center), val, &vaux);
-% 		    else   
+% 		    else
 % 			paux = insere( &((*no)->right), val, &vaux);
 % 		    if(paux == NULL) // nao promoveu
 % 		      return NULL;
@@ -546,8 +540,8 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 % 		   }
 % 		  }
 % 	  \end{lstlisting}
-% 
-%   	\end{block}      
+%
+%   	\end{block}
 %\end{frame}
 
 \begin{frame}[fragile]
@@ -581,7 +575,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		  }
 	  \end{lstlisting}
 
-  	\end{block}      
+  	\end{block}
 \end{frame}
 \frame {
       \frametitle{}
@@ -593,7 +587,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		      \item Alocação da \textcolor{blue}{Árvore 2-3}.
 		\end{itemize}
 
-		
+
 	\end{block}
 }
 
@@ -602,7 +596,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 %\begin{frame}{Código}
 %	\begin{block}{Programa 02}
 %		\lstinputlisting[language=c]{./programas/declaracaoEstruturas.c}
-% 	\end{block}      
+% 	\end{block}
 %\end{frame}
 
 
@@ -617,10 +611,10 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \frame { \frametitle{Aplicações}
 	\begin{block}{Objetivo}
 		\begin{itemize}
-		      \item Árvores 2-3 foram inventadas para garantir um bom desempenho no \textcolor{red}{pior} caso. 
+		      \item Árvores 2-3 foram inventadas para garantir um bom desempenho no \textcolor{red}{pior} caso.
 		      \item Se você estiver satisfeito com um bom desempenho médio, basta usar um Árvore Binária de Busca
 		      %\item $\dots$
-		\end{itemize}		
+		\end{itemize}
 		%A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
 	\end{block}
 }
@@ -629,9 +623,9 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	\begin{block}{Altura}
 		Considere uma árvore 2-3 com N nós.
 		\begin{itemize}
-		      \item Se temos apenas nós simples, a altura da árvore será lg N 
+		      \item Se temos apenas nós simples, a altura da árvore será lg N
 		      \item Se temos apenas nós duplos, a altura da árvore será ${\log_3 n}$ que é igual a [0.63 lg N]
-		\end{itemize}	
+		\end{itemize}
 		\textcolor{red}{Conclusão:} A altura nunca passa de lg N.
 	\end{block}
 }
@@ -641,7 +635,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		Em uma árvore 2-3 com N nós, \textcolor{red}{busca} e \textcolor{red}{inserção} nunca visitam mais que lg N nós - mesmo no pior caso.
 		\begin{itemize}
 		      \item Cada visita faz no máximo 2 comparações de chaves.
-		\end{itemize}		
+		\end{itemize}
 	\end{block}
 }
 
@@ -650,7 +644,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		Numa árvore 2-3, alguns nós envolvem uma comparação entre chaves enquanto outros envolvem três comparações.
 		\begin{itemize}
 		      \item Assim, o número de comparações de chaves é no máximo o dobro do número de nós visitados
-		\end{itemize}		
+		\end{itemize}
 	\end{block}
 }
 % Verificar forma de adicionar tabela sobre o número de
@@ -658,31 +652,31 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \frame { \frametitle{Complexidade} %do algoritmo
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=1\textwidth]{./fig/23tree24.png}	
+		\includegraphics[width=1\textwidth]{./fig/23tree24.png}
 		\caption{Imagem retirada de [1] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
 
 
 % \section[\thesection]{Terceiro Tópico}
-% 
+%
 % \frame { \frametitle{Terceiro Tópico}
 % 	\begin{block}{Tabelas}
-% 		Qualquer recursos disponível no \texttt{LaTeX} e seus pacotes complementares podem ser utilizados, desde que ao 
-% final a equipe gere um arquivo compactado (extensão .zip) contendo toda a ``\emph{pasta}'' com os \emph{slides} 
+% 		Qualquer recursos disponível no \texttt{LaTeX} e seus pacotes complementares podem ser utilizados, desde que ao
+% final a equipe gere um arquivo compactado (extensão .zip) contendo toda a ``\emph{pasta}'' com os \emph{slides}
 % desenvolvidos.
 % 		\newline
 % 		\newline
 % 		A pasta gerada também deverá conter um arquivo \texttt{.pdf} com os \emph{slides} utilizados.
 % 	\end{block}
 % }
-% 
+%
 % \frame { \frametitle{Terceiro Tópico}
 % 	\begin{block}{Exemplo 01}
-% 		Exemplos devem utilizar um \texttt{bloco} para serem apresentados, como o que está acontecendo neste momento, 
-% ou seja, um bloco está sendo utilizado e seu título é \texttt{Exemplo 01}. 
+% 		Exemplos devem utilizar um \texttt{bloco} para serem apresentados, como o que está acontecendo neste momento,
+% ou seja, um bloco está sendo utilizado e seu título é \texttt{Exemplo 01}.
 % 		\newline
-% 		\newline 
+% 		\newline
 % 		Você também pode utilizar \textcolor{blue}{cores} para dar destaque no texto.
 % 	\end{block}
 % }
@@ -694,7 +688,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 \section[\thesection]{Questionário}
 
 \frame { \frametitle{Questionário}
-	Deve haver, ao final, uma seção dedicada à apresentação de um questionário com pelo menos $05$ (cinco) questões, e 
+	Deve haver, ao final, uma seção dedicada à apresentação de um questionário com pelo menos $05$ (cinco) questões, e
 suas respectivas respostas esperadas.
 	\newline
 	\newline
@@ -708,13 +702,13 @@ suas respectivas respostas esperadas.
 	\begin{block}{Questão 01}
 	      Qual a altura de uma árvore 2-3 que tem 1 bilhão de chaves?
 	\end{block}
-}	
+}
 
 \frame { \frametitle{Questionário}
 	\begin{block}{Questão 01 -- Resposta Esperada}
 	      Uma Árvore com 1 bilhão de chaves possui exatamente altura
 	\end{block}
-}	
+}
 
 \frame { \frametitle{Questionário}
 	\begin{block}{Questão 02}
@@ -726,8 +720,8 @@ suas respectivas respostas esperadas.
 	\begin{block}{Questão 02 -- Resposta Esperada}
 		\begin{itemize}
 		      \item Máximo: Oito (8) chaves: 2 da raiz, 2 em cada um dos três filhos possíveis.
-		      \item Mínimo: Três (3) chaves, pois armazena 2 chaves por nó. % a partir do terceiro nó que a estruturação começa de verdade 
-		\end{itemize}	      
+		      \item Mínimo: Três (3) chaves, pois armazena 2 chaves por nó. % a partir do terceiro nó que a estruturação começa de verdade
+		\end{itemize}
 	\end{block}
 }
 %
@@ -738,7 +732,7 @@ suas respectivas respostas esperadas.
 \section[\thesection]{Referências Bibliográficas}
 
 %\frame { \frametitle{Referências Bibliográficas}
-%	A última seção dos \emph{slides} deve apresentar as referências bibliográficas do trabalho: artigos, 
+%	A última seção dos \emph{slides} deve apresentar as referências bibliográficas do trabalho: artigos,
 %\emph{websites}, livros, capítulos de livros, etc.
 %	\newline
 %	\newline
@@ -752,7 +746,7 @@ suas respectivas respostas esperadas.
 	 \item \url{https://www.passeidireto.com/disciplina/algoritmos-e-estrutura-de-dados-iii?type=6&materialid=1012744}
 	 \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
 	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
-	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens -- 
+	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens --
 Lexical Analysis}.
 	\end{enumerate}
 }
@@ -762,7 +756,7 @@ Lexical Analysis}.
 	\begin{figure}[htbp]
 		\centering
 		\includegraphics[width=0.50\textwidth]{./fig/MarkKostabi01.jpg}
-		\caption{by Mark Kostabi.} 
+		\caption{by Mark Kostabi.}
 \label{fig:traducaoRIparaLO}
    	\end{figure}
 }
