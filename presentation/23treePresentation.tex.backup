@@ -662,7 +662,7 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 		\caption{Imagem retirada de [1] (vide \textit{Referências Bibliográficas})}
         \end{figure}
 }
-%
+
 
 % \section[\thesection]{Terceiro Tópico}
 % 
@@ -713,6 +713,12 @@ suas respectivas respostas esperadas.
 \frame { \frametitle{Questionário}
 	\begin{block}{Questão 01 -- Resposta Esperada}
 	      Uma Árvore com 1 bilhão de chaves possui exatamente altura
+	\end{block}
+}	
+
+\frame { \frametitle{Questionário}
+	\begin{block}{Questão 02}
+	      Procurando pergunta...
 	\end{block}
 }	
 %
