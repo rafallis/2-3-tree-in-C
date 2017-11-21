@@ -1,0 +1,13 @@
+Nomes: Luigi Wagner & Rafael Alessandro & Rafael Falcão
+
+QUESTIONÁRIO
+
+Questão 01 - Qual a altura de uma árvore 2-3 que tem 1 bilhão de chaves?
+Resposta esperada: 
+
+Questão 02 - Quantas chaves, no máximo, pode conter uma árvore 2-3 de altura 2? Qual o número mínimo de chaves em uma árvore 2-3 de altura 2?
+Resposta esperada: Máximo: Oito (8) chaves: 2 da raiz, 2 em cada um dos três filhos possíveis.
+		   Mínimo: Três (3) chaves, pois armazena 2 chaves por nó.
+
+Questão 03 - Qual o número máximo de comparações de chaves em uma árvore 2-3?
+Resposta esperada: É o dobro do número de nós visitados.

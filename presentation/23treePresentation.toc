@@ -1,9 +1,9 @@
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
-\beamer@sectionintoc {2}{Pesquisa}{8}{0}{2}
-\beamer@sectionintoc {3}{Inser\IeC {\c c}\IeC {\~a}o}{14}{0}{3}
-\beamer@sectionintoc {4}{Remo\IeC {\c c}\IeC {\~a}o}{21}{0}{4}
-\beamer@sectionintoc {5}{C\IeC {\'o}digos}{37}{0}{5}
-\beamer@sectionintoc {6}{Aplica\IeC {\c c}\IeC {\~o}es}{44}{0}{6}
-\beamer@sectionintoc {7}{Question\IeC {\'a}rio}{50}{0}{7}
-\beamer@sectionintoc {8}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{58}{0}{8}
+\beamer@sectionintoc {2}{Pesquisa}{7}{0}{2}
+\beamer@sectionintoc {3}{Inser\IeC {\c c}\IeC {\~a}o}{13}{0}{3}
+\beamer@sectionintoc {4}{Remo\IeC {\c c}\IeC {\~a}o}{20}{0}{4}
+\beamer@sectionintoc {5}{C\IeC {\'o}digos}{36}{0}{5}
+\beamer@sectionintoc {6}{Aplica\IeC {\c c}\IeC {\~o}es}{43}{0}{6}
+\beamer@sectionintoc {7}{Question\IeC {\'a}rio}{49}{0}{7}
+\beamer@sectionintoc {8}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{56}{0}{8}
