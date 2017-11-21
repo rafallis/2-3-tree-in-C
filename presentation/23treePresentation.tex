@@ -206,8 +206,22 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	\begin{block}{}
 		Continuando os procedimentos, vamos à \textit{Inserção} em uma \color{blue}{Árvore 2-3}.
 	\end{block}
-
 }
+
+\frame { \frametitle{Inserção em uma Árvore 2-3}
+      \frametitle{}
+	\begin{block}{Inserção}
+		No âmbito das \textcolor{blue}{Árvores 2-3}, daremos uma olhada na inserção.
+		\begin{itemize}
+		      \item Assemelha-se a inserção em uma \textcolor{blue}{Árvore 2-3} à inserção em uma Árvore binária de busca.
+		      \item Estrutura básica (\textcolor{blue}{Struct});
+		      \item Alocação da \textcolor{blue}{Árvore 2-3}.
+		\end{itemize}
+
+
+	\end{block}
+}
+
 \frame { \frametitle{Inserção em uma Árvore 2-3}
 	Inserindo a chave 50 na Árvore:
 	\begin{figure}[htbp]
@@ -473,63 +487,63 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
   	\end{block}
 \end{frame}
 
-% \begin{frame}[fragile]
-% \frametitle{Código}
-%       \vspace{-0.3cm}
-% 	\begin{block}{}
-% 		\begin{lstlisting}
-% 		  no23 *insere( no23 **no, int val, int *rval){
-% 		    no23 *paux, *paux2;
-% 		    int   vaux, promov;
-% 		    if (*no == NULL) {    // arvore vazia
-% 		      *no = (no23 *) malloc (sizeof(no23));
-% 		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); // cria no folha com um valor
-% 		      return NULL;       // nada a fazer depois
-% 		    }
-% 		    if (isLeaf(*no)){     // chegou a folha
-% 		      if ((*no)->nkeys == 1){ // caso facil
-% 			adicionaChave(*no, val, NULL);
-% 			return NULL;
-% 		      }else{
-% 			paux = quebraNo(*no, val, &vaux, NULL);
-% 			*rval = vaux;
-% 			return paux;
-% 		      }
-% 		    }
-% 		\end{lstlisting}
-%
-%   	\end{block}
-% \end{frame}
-%
-% \begin{frame}[fragile]
-% \frametitle{Código}
-%       \vspace{-0.3cm}
-% 	\begin{block}{}
-% 		\begin{lstlisting}
-%
-% 		    else{// continua a procura
-% 		      if (val < (*no)->lkey)
-% 			paux = insere( &((*no)->left), val, &vaux);
-% 		    else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
-% 			paux = insere( &((*no)->center), val, &vaux);
-% 		    else
-% 			paux = insere( &((*no)->right), val, &vaux);
-% 		    if(paux == NULL) // nao promoveu
-% 		      return NULL;
-% 		    else if ((*no)->nkeys == 1){
-% 		      adicionaChave(*no, vaux, paux);
-% 		      return NULL;
-% 		    }else{
-% 		      paux2 = quebraNo(*no, vaux, &promov, paux);
-% 		      *rval = promov;
-% 		      return paux2;
-% 		    }
-% 		   }
-% 		  }
-% 	  \end{lstlisting}
-%
-%   	\end{block}
-%\end{frame}
+\begin{frame}[fragile]
+\frametitle{Código}
+      \vspace{-0.3cm}
+	\begin{block}{Inserção em uma Árvore 2-3}
+		\begin{lstlisting}
+		  no23 *insere( no23 **no, int val, int *rval){
+ 		    no23 *paux, *paux2;
+ 		    int   vaux, promov;
+ 		    if (*no == NULL) {    // arvore vazia
+ 		      *no = (no23 *) malloc (sizeof(no23));
+ 		      *no = criaNo(val, 0, 0, NULL, NULL, NULL); //cria no folha com valor
+ 		      return NULL;       // nada a fazer depois
+ 		    }
+ 		    if (isLeaf(*no)){     // chegou a folha
+ 		      if ((*no)->nkeys == 1){ // caso facil
+ 			    adicionaChave(*no, val, NULL);
+ 			    return NULL;
+ 		      }else{
+ 			    paux = quebraNo(*no, val, &vaux, NULL);
+ 			    *rval = vaux;
+ 			    return paux;
+ 		      }
+		    }
+ 		\end{lstlisting}
+
+   	\end{block}
+ \end{frame}
+
+ \begin{frame}[fragile]
+ \frametitle{Código}
+       \vspace{-0.3cm}
+ 	\begin{block}{}
+ 		\begin{lstlisting}
+
+ 		    else{// continua a procura
+ 		      if (val < (*no)->lkey)
+ 			    paux = insere( &((*no)->left), val, &vaux);
+ 		      else if (((*no)->nkeys == 1) || (val < (*no)->rkey))
+ 			    paux = insere( &((*no)->center), val, &vaux);
+ 		      else
+ 			    paux = insere( &((*no)->right), val, &vaux);
+ 		        if(paux == NULL) // nao promoveu
+ 		          return NULL;
+ 		        else if ((*no)->nkeys == 1){
+ 		          adicionaChave(*no, vaux, paux);
+ 		          return NULL;
+ 		        }else{
+ 		           paux2 = quebraNo(*no, vaux, &promov, paux);
+ 		           *rval = promov;
+ 		           return paux2;
+ 		        }
+ 		    }
+ 		  }
+ 	  \end{lstlisting}
+
+   	\end{block}
+\end{frame}
 
 \begin{frame}[fragile]
 \frametitle{}
@@ -564,19 +578,6 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 
   	\end{block}
 \end{frame}
-\frame {
-      \frametitle{}
-	\begin{block}{Inserção}
-		No âmbito das \textcolor{blue}{Árvores 2-3}, daremos uma olhada na inserção.
-		\begin{itemize}
-		      \item Assemelha-se a inserção em uma \textcolor{blue}{Árvore 2-3} à inserção em uma Árvore binária de busca.
-		      \item Estrutura básica (\textcolor{blue}{Struct});
-		      \item Alocação da \textcolor{blue}{Árvore 2-3}.
-		\end{itemize}
-
-
-	\end{block}
-}
 
 
 %  GUARDANDO PRA UM FUTURO
