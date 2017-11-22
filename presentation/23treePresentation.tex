@@ -677,13 +677,13 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 
 \frame { \frametitle{Questionário}
 	\begin{block}{Questão 01}
-	      Qual a altura de uma árvore 2-3 que tem 1 bilhão de chaves?
+	      Quantas chaves tem um nó não-folha com 3 filhos?
 	\end{block}
 }
 
 \frame { \frametitle{Questionário}
 	\begin{block}{Questão 01 -- Resposta Esperada}
-	      Uma Árvore com 1 bilhão de chaves possui exatamente altura
+	      Possui 2 chaves.
 	\end{block}
 }
 
@@ -713,6 +713,31 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	      É o dobro do número de nós visitados.
 	\end{block}
 }
+
+\frame { \frametitle{Questionário}
+    \begin{block}{Questão 04}
+        Qual a vantagem da árvore 2-3 sobre outra árvore de busca?
+    \end{block}
+}
+
+\frame { \frametitle{Questionário}
+    \begin{block}{Questão 04 -- Resposta Esperada}
+        Todas as operações de busca sempre serão em tempo logarítmico.
+    \end{block}
+}
+
+\frame { \frametitle{Questionário}
+    \begin{block}{Questão 05}
+        Qual a altura máxima que uma árvore 2-3 com 1 bilhão de chaves pode ter?
+    \end{block}
+}
+
+\frame { \frametitle{Questionário}
+    \begin{block}{Questão 05 -- Resposta Esperada}
+        Nas árvores 2-3 a altura nunca passará de log N, caso em que todos os nós serão simples, portanto, log 2bi será a altura máxima.
+    \end{block}
+}
+
 %
 %---------------------------------------------------------------------------------------------------
 % Referências Bibliográficas
@@ -734,20 +759,18 @@ Os nós externos a árvore (nós-folha) não tem filhos e possuem um ou dois ele
 	 \item \url{https://pt.wikipedia.org/wiki/\%C3\%81rvore_2-3}
 	 \item \url{https://www.passeidireto.com/disciplina/algoritmos-e-estrutura-de-dados-iii?type=6&materialid=1012744}
 	 \item \url{https://www.ime.usp.br/~gold/cursos/2002/mac2301/aulas/b-arvore/b-arvore.html}
-	 \item COOPER, K. and TORCZON, L. -- 2011 : \textit{Chapter 2 -- Scanners};
-	 \item GRUNE, \textit{et al.} -- 2012 : \textit{Chapter 2 -- Program Text to Tokens --
-Lexical Analysis}.
+     \item SEDGEWICK, Robert, Algorithms in C, Third Edition : \textit{Chapter 13 -- Balanced Trees}.
 	\end{enumerate}
 }
 
-\frame { \frametitle{Referências Bibliográficas}
-	Se desejar, pode encerrar com uma imagem, uma citação, etc.
-	\begin{figure}[htbp]
-		\centering
-		\includegraphics[width=0.50\textwidth]{./fig/MarkKostabi01.jpg}
-		\caption{by Mark Kostabi.}
-\label{fig:traducaoRIparaLO}
-   	\end{figure}
-}
+%\frame { \frametitle{Referências Bibliográficas}
+%	Se desejar, pode encerrar com uma imagem, uma citação, etc.
+%	\begin{figure}[htbp]
+%		\centering
+%		\includegraphics[width=0.50\textwidth]{./fig/MarkKostabi01.jpg}
+%		\caption{by Mark Kostabi.}
+%\label{fig:traducaoRIparaLO}
+%   	\end{figure}
+%}
 
 \end{document}
